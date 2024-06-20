@@ -61,9 +61,15 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 
 3. **Configuration**
 
-   1.Environment Variables: - Create a .env file in the root directory. - Add your MongoDB URI:
+   1.Environment Variables:
+
+   - Create a .env file in the root directory.
+   - Add your MongoDB URI:
+
    ```bash
    MONGODB_URI=your_mongodb_connection_string
+
+   ```
 
 4. **Running the Application**
 
