@@ -17,38 +17,38 @@ async function createUser(event) {
     });
     const userId = await response.json();
     console.log(`User created with ID: ${userId}`);
-    getUserProgress(userId);
+    renderGameBoard(userId);
   } catch (error) {
     console.error(error);
   }
 }
 
-async function getUserProgress(userId) {
+async function renderGameBoard(userId) {
   try {
     const response = await fetch(`${apiUrl}/users/${userId}/progress`);
     const progress = await response.json();
-    displayProgress(progress);
+    const gameBoardHtml = renderGameBoardHtml(progress);
+    gameContainer.innerHTML = gameBoardHtml;
   } catch (error) {
     console.error(error);
   }
 }
 
-function displayProgress(progress) {
-  const progressHtml = `
-    <h2>Progress:</h2>
-    <p>Alphabet:</p>
-    <ul>
-      ${Object.keys(progress.alphabet).map(letter => `
-        <li>${letter}: ${progress.alphabet[letter] ? 'true' : 'false'}</li>
-      `).join('')}
-    </ul>
-    <p>Games:</p>
-    <ul>
-      ${Object.keys(progress.games).map(game => `
-        <li>${game}: ${progress.games[game]}</li>
-      `).join('')}
-    </ul>
-  `;
-  progressContainer.innerHTML = progressHtml;
+function renderGameBoardHtml(progress) {
+  const html = '';
+  html += `<h2>Game Board:</h2>`;
+  html += `<p>Alphabet:</p>`;
+  html += `<ul>`;
+  Object.keys(progress.alphabet).forEach(letter => {
+    html += `<li>${letter}: ${progress.alphabet[letter] ? 'true' : 'false'}</li>`;
+  });
+  html += `</ul>`;
+  html += `<p>Games:</p>`;
+  html += `<ul>`;
+  Object.keys(progress.games).forEach(game => {
+    html += `<li>${game}: ${progress.games[game]}</li>`;
+  });
+  html += `</ul>`;
+  return html;
 }
 
