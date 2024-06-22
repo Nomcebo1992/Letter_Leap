@@ -19,7 +19,6 @@ router.post("/update-progress", (req, res) => {
   );
 });
 
-// Retrieve a user's progress
 router.get("/users/:username/progress", (req, res) => {
   const { username } = req.params;
   User.findOne({ username }, (err, user) => {
@@ -29,7 +28,6 @@ router.get("/users/:username/progress", (req, res) => {
   });
 });
 
-// Update a user's progress for a specific letter
 router.patch("/users/:username/progress/letters/:letter", (req, res) => {
   const { username } = req.params;
   const { letter } = req.params;
@@ -45,7 +43,6 @@ router.patch("/users/:username/progress/letters/:letter", (req, res) => {
   );
 });
 
-// Update a user's progress for a specific game
 router.patch("/users/:username/progress/games/:game", (req, res) => {
   const { username } = req.params;
   const { game } = req.params;
@@ -61,7 +58,6 @@ router.patch("/users/:username/progress/games/:game", (req, res) => {
   );
 });
 
-// Retrieve a list of all users
 router.get("/users", (req, res) => {
   User.find({}, (err, users) => {
     if (err) return res.status(500).send(err);
