@@ -1,9 +1,12 @@
 const mongoose = require("mongoose");
-const User = require("./user");
+const User = require("../User");
 
-mongoose.connect("mongodb://localhost:27017/mydatabase", {
+const MONGODB_URI =
+  "mongodb+srv://dbTholoana:qYGq7cAe%23%2AJu7WX@letterleap.ue5imbh.mongodb.net/?retryWrites=true&w=majority&appName=LetterLeap";
+
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
 });
 
 mongoose.connection.once("open", () => {
@@ -39,14 +42,14 @@ const user = new User({
       W: true,
       X: true,
       Y: true,
-      Z: true
+      Z: true,
     },
     games: {
       matching: 10,
       letterHunt: 5,
-      puzzles: 2
-    }
-  }
+      puzzles: 2,
+    },
+  },
 });
 
 user.save((err, user) => {
