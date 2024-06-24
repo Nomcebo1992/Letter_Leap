@@ -20,6 +20,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", apiRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the server!");
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });

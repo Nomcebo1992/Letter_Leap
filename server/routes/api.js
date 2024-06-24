@@ -2,6 +2,10 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 
+router.get("/", (req, res) => {
+  res.send("Welcome to the server!");
+});
+
 router.get("/greeting", (req, res) => {
   res.json({ message: "Hello from the server!" });
 });
