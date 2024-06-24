@@ -16,36 +16,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-// script.js
-const gameBoardHtml = '<h2>Game Board</h2><p id="correct-letter">A</p>';
-
-document.body.innerHTML = gameBoardHtml;
-
-const submitButton = document.getElementById('submit-button');
-const userInputInput = document.getElementById('user-input');
-const correctLetterElement = document.getElementById('correct-letter');
-
-submitButton.addEventListener('click', checkAnswer);
-
-function checkAnswer() {
-  const userInput = userInputInput.value;
-  const correctLetter = correctLetterElement.textContent;
-  const isMatch = checkLetterMatch(userInput, correctLetter);
-
-  if (isMatch) {
-    console.log('Correct!');
-    // Update game board, increment score, etc.
-  } else {
-    console.log('Try again!');
-  }
-}
-
-function checkLetterMatch(userInput, correctLetter) {
-  if (userInput === correctLetter) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
