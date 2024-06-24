@@ -1,25 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Letter Matching Game</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Letter Leap</title>
+  <style>
+    /* Add some basic styling */
+  </style>
 </head>
 <body>
-  <h1>Letter Matching Game</h1>
-  <form id="create-user-form">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username"><br><br>
-    <input type="submit" value="Create User">
+  <h1>Letter Leap</h1>
+  <form>
+    <input type="text" id="user-input" />
+    <button id="submit-button">Submit</button>
   </form>
-  <div id="game-container">
-    <!-- Game board will be rendered here -->
-  </div>
-  <div id="progress-container">
-    <!-- User progress will be displayed here -->
-  </div>
+  <div id="game-board"></div>
   <script src="script.js"></script>
 </body>
 </html>
+
+// script.js
+const gameBoardHtml = '<h2>Game Board</h2><p id="correct-letter">A</p>';
+
+document.body.innerHTML = gameBoardHtml;
+
+const submitButton = document.getElementById('submit-button');
+const userInputInput = document.getElementById('user-input');
+const correctLetterElement = document.getElementById('correct-letter');
+
+submitButton.addEventListener('click', checkAnswer);
+
+function checkAnswer() {
+  const userInput = userInputInput.value;
+  const correctLetter = correctLetterElement.textContent;
+  const isMatch = checkLetterMatch(userInput, correctLetter);
+
+  if (isMatch) {
+    console.log('Correct!');
+    // Update game board, increment score, etc.
+  } else {
+    console.log('Try again!');
+  }
+}
+
+function checkLetterMatch(userInput, correctLetter) {
+  if (userInput === correctLetter) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
