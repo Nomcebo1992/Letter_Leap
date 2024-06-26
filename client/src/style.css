@@ -1,0 +1,10 @@
+import React, { useState } from 'react';
+
+const GameContainer = () => {
+  const gameContainerStyle = {
+    width: '500px',
+    margin: '0 auto',
+    backgroundColor: '#f0f0f0',
+    padding: '20px',
+    border: '1px solid #ccc',
+  };
