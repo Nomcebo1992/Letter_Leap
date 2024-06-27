@@ -1,6 +1,6 @@
 # Letter Leap - Alphabet Learning Web Application
 
-![Letter Leap Logo](url_to_logo)
+![Letter Leap Logo](logo/Letter Leap Logo.png)
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [License](#license)
 - [Authors](#authors)
 
 ## About
@@ -74,7 +75,7 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 - Start the development server:
   npm start
 
-Open your browser and go to http://localhost:3000 to view the application.
+Open your browser and go to http://localhost:5000 to view the application.
 
 ## Usage
 
@@ -91,6 +92,10 @@ Open your browser and go to http://localhost:3000 to view the application.
 - Commit your changes (git commit -am 'Add some feature')
 - Push to the branch (git push origin feature/your-feature)
 - Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License.
 
 ## Authors
 
