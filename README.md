@@ -1,6 +1,6 @@
 # Letter Leap - Alphabet Learning Web Application
 
-![Letter Leap Logo](client/logo/Letter Leap Logo.png)
+![Letter Leap Logo](client/logo/Letter%20Leap%20Logo.png)
 
 ## Table of Contents
 
