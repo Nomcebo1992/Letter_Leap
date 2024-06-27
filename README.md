@@ -1,6 +1,6 @@
 # Letter Leap - Alphabet Learning Web Application
 
-![Letter Leap Logo](logo/Letter Leap Logo.png)
+![Letter Leap Logo](client/logo/Letter Leap Logo.png)
 
 ## Table of Contents
 
@@ -24,13 +24,13 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 ## Features
 
 - **Learn Alphabet**: Interactive pages for each letter including phonics sounds, example words, and tracing activities.
-- **Games**: Fun and educational games such as matching games, letter hunt, and puzzles.
+- **Games**: Fun and educational games such as matching games, letter hunt, and puzzles (All of which will be added at a later stage, this still at MVP).
 - **Progress Tracking**: Track children's learning progress with badges and stars for completed activities.
 - **Settings**: Audio controls, language options, and user profile management for personalized learning experiences.
 
 ## Technologies Used
 
-- **Front-End**: HTML5, CSS3, JavaScript (React)
+- **Front-End**: HTML5, CSS3, JavaScript (Vanilla)
 - **Back-End**: Node.js, Express.js
 - **Database**: MongoDB (using Mongoose)
 - **Other Tools**: Git, GitHub, npm
