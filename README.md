@@ -14,12 +14,13 @@
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Blog post](#blog-post)
 - [License](#license)
 - [Authors](#authors)
 
 ## About
 
-Letter Leap is an educational web application designed to assist toddlers and young children in learning the alphabet in an engaging and interactive way. Through a variety of activities and games, Letter Leap aims to make learning fun and effective for early learners.
+Letter Leap is an educational web application designed to assist toddlers and young children in learning the alphabet in an engaging and interactive way. Through a variety of activities and games, Letter Leap aims to make learning fun and effective for early learners. 
 
 ## Features
 
@@ -27,6 +28,9 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 - **Games**: Fun and educational games such as matching games, letter hunt, and puzzles (All of which will be added at a later stage, this still at MVP).
 - **Progress Tracking**: Track children's learning progress with badges and stars for completed activities.
 - **Settings**: Audio controls, language options, and user profile management for personalized learning experiences.
+
+![Letter Leap screenshot](screenshots/learn-b.png)
+
 
 ## Technologies Used
 
@@ -72,10 +76,7 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 
 4. **Running the Application**
 
-- Start the development server:
-  npm start
-
-Open your browser and go to http://localhost:5000 to view the application.
+- [Letter Leap Demo](https://nomcebo1992.github.io/Letter_Leap/client/index.html)
 
 ## Usage
 
@@ -92,6 +93,9 @@ Open your browser and go to http://localhost:5000 to view the application.
 - Commit your changes (git commit -am 'Add some feature')
 - Push to the branch (git push origin feature/your-feature)
 - Create a new Pull Request
+
+## Blog Post
+- Tholoana Manyane blog post: https://www.linkedin.com/posts/activity-7215758093870112768-xauZ/?utm_source=share&utm_medium=member_desktop
 
 ## License
 
