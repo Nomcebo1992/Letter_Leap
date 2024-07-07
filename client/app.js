@@ -1,3 +1,4 @@
+// Data representing each letter of the alphabet with associated sound, examples, and images
 const alphabetData = [
   {
     letter: "A",
@@ -157,6 +158,7 @@ const alphabetData = [
   },
 ];
 
+// Data representing the matching game items with words, images, and associated letter
 const matchingGameData = [
   { word: "Apple", imageUrl: "images/apple-game.jpg", letter: "A" },
   { word: "Ant", imageUrl: "images/ant-game.jpg", letter: "A" },
@@ -212,16 +214,19 @@ const matchingGameData = [
   { word: "Zoo", imageUrl: "images/zoo-game.jpg", letter: "Z" },
 ];
 
+// Function to display alphabet buttons dynamically on the page
 function displayAlphabetButtons() {
   const alphabetButtonsDiv = document.getElementById("alphabet-buttons");
   alphabetData.forEach((letterObj) => {
     const button = document.createElement("button");
     button.textContent = letterObj.letter;
+    // Add event listener to each button to show details for the corresponding letter
     button.addEventListener("click", () => showLetterDetails(letterObj));
     alphabetButtonsDiv.appendChild(button);
   });
 }
 
+// Function to display letter details when a button is clicked
 function showLetterDetails(letterObj) {
   const letterContentDiv = document.getElementById("letter-content");
   letterContentDiv.innerHTML = `
@@ -243,7 +248,9 @@ function showLetterDetails(letterObj) {
               .join("")}
         </div>
     `;
+  // Display the matching game related to the current letter
   displayMatchingGame(letterObj.letter);
+   // Update progress and store the last letter viewed
   updateProgress(letterObj.letter);
 }
 
@@ -270,11 +277,13 @@ function displayMatchingGame(letter) {
   gamesListDiv.appendChild(matchingGameDiv);
 }
 
+// Function to handle clicks on game cards, toggling selection and checking for matches
 function handleCardClick(card) {
   card.classList.toggle("selected");
   checkMatchingGame();
 }
 
+// Function to check if two selected cards match, applying styles accordingly
 function checkMatchingGame() {
   const selectedCards = document.querySelectorAll(".card.selected");
   if (selectedCards.length === 2) {
@@ -294,6 +303,7 @@ function checkMatchingGame() {
   }
 }
 
+// Function to update progress (total letters viewed and last letter viewed) using localStorage
 function updateProgress(letter) {
   const totalLetters = localStorage.getItem("totalLetters") || 0;
   const lastLetter = localStorage.getItem("lastLetter") || "-";
