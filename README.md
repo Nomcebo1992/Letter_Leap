@@ -14,6 +14,8 @@
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
 - [Contributing](#contributing)
+- [Challenges and Learnings](#challenges-and-learning)
+- [Future Improvements](#future-improvements)
 - [Blog post](#blog-post)
 - [License](#license)
 - [Authors](#authors)
@@ -95,6 +97,21 @@ Our journey with Letter Leap was filled with challenges and learning experiences
 - Commit your changes (git commit -am 'Add some feature')
 - Push to the branch (git push origin feature/your-feature)
 - Create a new Pull Request
+
+## Challenges and Learnings
+
+One of the biggest challenges we faced was learning and implementing React for the first time. After several days of struggling with compile errors and unfamiliar concepts, we decided to start from scratch using vanilla JavaScript, HTML, and CSS. This decision allowed us to focus on the core functionality without being bogged down by a steep learning curve.
+
+Another challenge was ensuring the application was engaging for children. We spent considerable time researching educational methods and designing activities that would be both fun and instructive. User feedback from parents and children was invaluable in refining these features.
+
+## Future Improvements
+
+We have several exciting plans for future iterations of Letter Leap:
+
+- Additional Games: More games to reinforce alphabet learning.
+- Voice Recognition: Allowing children to practice pronunciation.
+- Mobile App: Developing a mobile version for easier access.
+- Multilingual Support: Expanding language options to support more users globally.
 
 ## Blog Post
 - Tholoana Manyane blog post: https://www.linkedin.com/posts/activity-7215758093870112768-xauZ/?utm_source=share&utm_medium=member_desktop
