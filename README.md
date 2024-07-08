@@ -96,6 +96,7 @@ Letter Leap is an educational web application designed to assist toddlers and yo
 
 ## Blog Post
 - Tholoana Manyane blog post: https://www.linkedin.com/posts/activity-7215758093870112768-xauZ/?utm_source=share&utm_medium=member_desktop
+- Nomcebo Mbambo blog post: https://www.linkedin.com/posts/nomcebo-mbambo-862112318_the-purpose-of-the-project-was-for-it-to-activity-7215848706581893120-H001?utm_source=share&utm_medium=member_android
 
 ## License
 
