@@ -20,7 +20,9 @@
 
 ## About
 
-Letter Leap is an educational web application designed to assist toddlers and young children in learning the alphabet in an engaging and interactive way. Through a variety of activities and games, Letter Leap aims to make learning fun and effective for early learners. 
+Letter Leap is an educational web application designed to assist toddlers and young children in learning the alphabet in an engaging and interactive way. The inspiration for creating this application came from our own experiences as parents trying to find effective and enjoyable learning tools for our children. Balancing work, study, and parenting responsibilities, we realized the importance of making learning fun and accessible.
+
+Our journey with Letter Leap was filled with challenges and learning experiences. From grappling with unfamiliar technologies to debugging persistent compile errors, each hurdle was a stepping stone toward a better understanding of front-end development. We started from scratch multiple times, but each iteration brought us closer to a product we are proud of. 
 
 ## Features
 
